@@ -4,18 +4,60 @@ import Modal from '../../components/modal';
 
 const books = [
   {
-    title: 'Book Title 1',
-    author: 'Author Name 1',
-    description: 'Description of Book 1',
+    title: 'The Great Gatsby',
+    author: 'F. Scott Fitzgerald',
+    description: 'The story of the mysteriously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan.',
     image: 'https://via.placeholder.com/150',
     price: 10.99,
   },
   {
-    title: 'Book Title 2',
-    author: 'Author Name 2',
-    description: 'Description of Book 2',
+    title: 'To Kill a Mockingbird',
+    author: 'Harper Lee',
+    description: 'The story of young Scout Finch and her father, lawyer Atticus Finch, who defends a black man accused of raping a white woman.',
     image: 'https://via.placeholder.com/150',
     price: 12.99,
+  },
+  {
+    title: 'Pride and Prejudice',
+    author: 'Jane Austen',
+    description: 'The story of Elizabeth Bennet and her family, focusing on the themes of love, class, and reputation.',
+    image: 'https://via.placeholder.com/150',
+    price: 9.99,
+  },
+  {
+    title: '1984',
+    author: 'George Orwell',
+    description: 'A dystopian novel set in a totalitarian society where the government constantly surveils its citizens.',
+    image: 'https://via.placeholder.com/150',
+    price: 11.99,
+  },
+  {
+    title: 'The Catcher in the Rye',
+    author: 'J.D. Salinger',
+    description: 'The story of Holden Caulfield, a young man struggling with the phoniness of the adult world.',
+    image: 'https://via.placeholder.com/150',
+    price: 10.49,
+  },
+  {
+    title: 'Lord of the Flies',
+    author: 'William Golding',
+    description: 'A group of boys stranded on a deserted island who descend into savagery, exploring themes of civilization and human nature.',
+    image: 'https://via.placeholder.com/150',
+    price: 9.79,
+  },
+  {
+    title: 'The Hobbit',
+    author: 'J.R.R. Tolkien',
+    description: 'The prelude to the epic fantasy series The Lord of the Rings, following the adventures of Bilbo Baggins.',
+    image: 'https://via.placeholder.com/150',
+    price: 14.99,
+  },
+  {
+    title: 'Jane Eyre',
+    author: 'Charlotte Bronte',
+    description: 'The story of Jane Eyre, an orphan who becomes a governess and falls in love with her employer, Mr. Rochester.',
+    image: 'https://via.placeholder.com/150',
+    price: 11.49,
   },
   // Add more book objects as needed
 ];
