@@ -11,13 +11,13 @@ const Navigation = () => {
           </Link>
         </li>
         <li className="mr-6">
-          <Link href="/about">
-            <p className="text-yellow-50 hover:text-yellow-300">About</p>
+          <Link href="/books">
+            <p className="text-yellow-50 hover:text-yellow-300">Books</p>
           </Link>
         </li>
         <li>
-          <Link href="/contact">
-            <p className="text-yellow-50 hover:text-yellow-300">Contact</p>
+          <Link href="/about">
+            <p className="text-yellow-50 hover:text-yellow-300">About Us</p>
           </Link>
         </li>
       </ul>
