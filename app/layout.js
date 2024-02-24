@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
     <body>
     <Navbar/>
-    <div className="bg-amber-500 text-yellow-50 min-h-screen flex flex-col">
+    <div className="bg-white text-black min-h-screen flex flex-col">
       {children}
     </div>
     </body>
