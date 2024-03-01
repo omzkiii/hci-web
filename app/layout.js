@@ -14,10 +14,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
     <body>
     <Navbar/>
-    <div className="bg-white text-black font-rye min-h-screen flex flex-col" style={{backgroundImage: 'url(https://www.ancient-origins.net/sites/default/files/field/image/Prometheus-giving-man-fire-Greek-mythology.jpg)', backgroundPosition: 'top', backgroundSize: '100vw 60vh'}}>
+    <div className="bg-white text-black font-rye min-h-screen flex flex-col">
       {children}
     </div>
     </body>
     </html>
   );
 }
+//{{backgroundImage: 'url(https://www.ancient-origins.net/sites/default/files/field/image/Prometheus-giving-man-fire-Greek-mythology.jpg)', backgroundPosition: 'top', backgroundSize: '100vw 60vh'}}
