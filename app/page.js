@@ -1,14 +1,10 @@
 import React from 'react';
-import "@fontsource/libre-baskerville";
-import "@fontsource/libre-baskerville/400.css"; 
-import "@fontsource/libre-baskerville/400-italic.css"; 
-
 
 const FeaturedBooks = () => {
   return (
-    <div className="absolute left-0 right-0 bg-amber-500 p-4 text-white text-center transform translate-y-96 transition duration-500 ease-in-out hover:translate-y-60 overflow-auto ">
-      <h2 className="text-2xl font-bold mb-2">Featured Books</h2>
-      <div className="flex justify-center">
+    <div className="bg-amber-200 p-8 text-white text-center drop-shadow-xl stroke-black stroke-2 rounded-2xl"> 
+      <h2 className="text-3xl font-bold text-amber-900 mb-2">Featured Books</h2>
+      <div className="flex justify-center drop-shadow-lg">
         <img
           src="https://www.readersdigest.co.uk/media/Slaughterhouse-Five-2.jpg"
           alt="Featured Books"
@@ -25,9 +21,9 @@ const FeaturedBooks = () => {
           className="w-64 h-64 px-4 object-contain"
         />
       </div>
-      <div className="mt-4">
-        <h2 className="text-2xl font-bold mb-2">Recommended Books</h2>
-        <div className="flex justify-center">
+      <div className="mt-12">
+        <h2 className="text-3xl text-amber-900 font-bold mb-2 drop-shadow-md">Recommended Books</h2>
+        <div className="flex justify-center drop-shadow-lg">
           <img
             src="https://th.bing.com/th/id/OIP.mhFI3Nd75_9KE06fiw-XGAHaKN?rs=1&pid=ImgDetMain"
             alt="Recommended Books"
@@ -50,25 +46,19 @@ const FeaturedBooks = () => {
 };
 
 const LandingPage = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000, 
+  const backgroundImageStyle = {
+    backgroundImage: `url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
   };
-
+  
   return (
-    <div className="text-center relative ">
-      <br />
-      <br />
-      <h1 className="text-5xl text-amber-700 font-bold mb-4 absolute top-36 left-0 right-0 " >Welcome to Prometheus</h1>
-      <p className="text-xl text-amber-700 absolute top-52 left-0 right-0">Your ultimate destination for great reads!</p>
-      <p className="text-xl text-amber-700 absolute top-64 left-0 right-0 font-bold underline"><a href="localhost:3000/books">Find Some Books Here!</a></p>
-    <FeaturedBooks>
-    </FeaturedBooks>
+    <div style={backgroundImageStyle}>
+    <div className='flex flex-row h-screen py-24 backdrop-blur-sm' >
+    <div className="relative text-left px-36 drop-shadow-2xl">
+      <h1 className="text-9xl text-amber-100 mb-4 drop-shadow-2xl">Prometheus</h1>
+      <p className="text-3xl text-amber-100">Your ultimate destination for great reads!</p>
+    </div>
+      <FeaturedBooks/>
+    </div>
     </div>
   );
 };
