@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="bg-amber-700 py-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <h1 className="text-white text-2xl font-bold">Prometheus</h1>
+          <h1 className="text-white text-2xl font-rye font-bold ">Prometheus</h1>
         </div>
         <div className="flex items-center">
           <ul className="flex justify-center mr-6">
@@ -32,9 +32,9 @@ const Navbar = () => {
               name="search"
               id="search"
               placeholder="Search"
-              className="rounded-full px-4 py-2 text-gray-900 bg-gray-200 border-none focus:outline-none"
+              className="rounded-xl px-4 py-2 text-gray-900 bg-gray-200 border-none focus:outline-none"
             />
-            <button className="ml-2 rounded bg-amber-500 px-4 py-2 text-white">Search</button>
+            <button className="ml-2 rounded-xl bg-amber-500 px-4 py-2 text-white">Search</button>
           </div>
         </div>
       </div>

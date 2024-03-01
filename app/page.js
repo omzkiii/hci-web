@@ -1,4 +1,8 @@
 import React from 'react';
+import "@fontsource/libre-baskerville";
+import "@fontsource/libre-baskerville/400.css"; 
+import "@fontsource/libre-baskerville/400-italic.css"; 
+
 
 const FeaturedBooks = () => {
   return (
@@ -46,14 +50,25 @@ const FeaturedBooks = () => {
 };
 
 const LandingPage = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000, 
+  };
+
   return (
-    <div className="text-center relative">
+    <div className="text-center relative ">
       <br />
       <br />
-      <h1 className="text-5xl font-bold mb-4 absolute top-36 left-0 right-0">Welcome to Prometheus</h1>
-      <p className="text-xl absolute top-52 left-0 right-0">Your ultimate destination for great reads!</p>
-      <p className="text-xl absolute top-64 left-0 right-0 font-bold underline"><a href='localhost:3000/books'>Find Some Books Here!</a></p>
-      <FeaturedBooks />
+      <h1 className="text-5xl text-amber-700 font-bold mb-4 absolute top-36 left-0 right-0 " >Welcome to Prometheus</h1>
+      <p className="text-xl text-amber-700 absolute top-52 left-0 right-0">Your ultimate destination for great reads!</p>
+      <p className="text-xl text-amber-700 absolute top-64 left-0 right-0 font-bold underline"><a href="localhost:3000/books">Find Some Books Here!</a></p>
+    <FeaturedBooks>
+    </FeaturedBooks>
     </div>
   );
 };
